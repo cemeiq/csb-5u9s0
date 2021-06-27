@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: lightpink;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+h1 {
+  font-size: 50px;
+  padding-top: 20px;
+}
+section {
+  background-color: lightpink;
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  max-width: 90%;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.display {
+  background-color: grey;
+  height: 100%;
+  width: 100%;
+  text-align: right;
+  position: relative;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.dsp1 {
+  opacity: 0.4;
+  font-size: 20px;
+  height: 20px;
+}
+
+.tempresult {
+  position: absolute;
+  font-size: 20px;
+  opacity: 0.4;
+  left: 10;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  /* the grid stuff! */
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  margin: 5px;
+  /* create 4 columns */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.button {
+  height: 70px;
+  width: 70px;
+  background-color: lightgreen;
+  margin-left: 5px;
+
+  border-radius: 8px;
+  margin: 2px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.button:hover {
+  background-color: green;
+}
